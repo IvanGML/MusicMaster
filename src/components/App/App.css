@@ -3,16 +3,74 @@
     padding: 5%;
 }   
 .App-title {
-    font-size: 26px;
+    font-variant: small-caps;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+.profile {
+    display: flex;
+    justify-content: center;
 }
 .profile-img {
+    height: 250px;
     width: 250px;
+    border: 3px solid #999;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-name {
+    font-size: 26px;
+}
+.profile-followers {
+    font-size: 18px;
 }
 .genre {
+    cursor: pointer;
     display: block;
     padding: 4px 20px;
     width: 200px;
     margin: 5px auto;
     border-radius: 3px;
-    background-color: #999;
+    background-color: #fafafa;
+    transition: .2s;
+}
+.genre:hover {
+    background-color: #efefef;
+}
+.profile-info {
+    margin-left: 10px;
+    text-align: left;
+}
+
+/*galary*/
+.galary {
+    margin: 20px auto;
+}
+.galary-item {
+    display: inline-block;
+    flex: 1 0 200px;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid #333;
+}
+.galary-item img {
+    transition: all .2s ease-in;
+    max-width: 200px;
+    border-radius: 8px;
+}
+.galary-item img:hover {
+    transform: scale(1.1);
+}
+.galary-item p {
+    letter-spacing: 1px;
+    background-color: black;
+    color: #fafafa;
+    opacity: 0.75;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
 }

@@ -6,16 +6,21 @@ class Profile extends React.Component{
         let artist = {name: '', followers: {total: ''}, images: [{url: ''}]}
         this.props.artist !== null?artist = this.props.artist : null
         return(
-            <div className='Profile'>
+            <div>
                 {this.props.artist !== null?
-                <div>
-                    <img src={artist.images[0].url} alt='pic' className='profile-img'/>
-                    <div>{artist.name}</div>
-                    <div>{artist.followers.total}</div>
-                    <div>{artist.genres.map((item,index)=>{
-                        return <span className='genre' key={index}>{item}</span>
-                        })}</div>
-                </div>:null}
+                    <div className='profile'>
+                        <img src={artist.images[0].url} alt='profile' className='profile-img'/>
+                        <div>
+                            <div className='profile-info'>
+                                <div className='profile-name'>{artist.name}</div>
+                                <div className='profile-followers'>{artist.followers.total} followers</div>
+                                <div>{artist.genres.map((item,index)=>{
+                                    return <span className='genre' key={index}>{item}</span>
+                                    })}</div>
+                            </div>
+                        </div>
+                    </div>
+                :null}
             </div>
         );
     }
