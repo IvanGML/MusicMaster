@@ -1,0 +1,18 @@
+.App {
+    text-align: center;
+    padding: 5%;
+}   
+.App-title {
+    font-size: 26px;
+}
+.profile-img {
+    width: 250px;
+}
+.genre {
+    display: block;
+    padding: 4px 20px;
+    width: 200px;
+    margin: 5px auto;
+    border-radius: 3px;
+    background-color: #999;
+}
