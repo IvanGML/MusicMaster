@@ -49,7 +49,11 @@ class Galary extends React.Component{
                             <p>{item.name}</p>
                             <div className='playback'>
                                 <div className='playback-inner'>
-                                    {this.state.curentUrl === item.preview_url?(this.state.isPlaying?<span>&#9208;</span>:<span>&#9654;</span>):<span>&#9654;</span>}
+                                    {this.state.curentUrl === item.preview_url?
+                                        (this.state.isPlaying?
+                                            <span>&#9208;</span>:
+                                            <span>&#9654;</span>):
+                                        <span>&#9654;</span>}
                                 </div>
                             </div>
                         </div>
