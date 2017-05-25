@@ -74,3 +74,27 @@
     top: 0;
     left: 0;
 }
+.playback {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+}
+.playback-inner {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    background-color: #000;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    padding-top: 13px; 
+    margin-left: 70px;
+    margin-top: 70px;
+    opacity: 0;
+    transition: .2s;
+}
+.playback:hover .playback-inner{
+    opacity: 0.8;
+}
